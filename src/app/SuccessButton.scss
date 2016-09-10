@@ -1,4 +1,33 @@
 @import "~react-toolbox/lib/colors";
+@import "~react-toolbox/lib/globals";
+@import "~react-toolbox/lib/mixins";
+@import "~react-toolbox/lib/button/config";
 @import "~react-toolbox/lib/button/mixins";
 
-@include btn-colors("primary", $color-white, $palette-green-500, rgba($palette-green-500, .2));
+.button {
+  position: relative;
+}
+
+%button {
+  
+  height: 100px;
+  
+}
+
+
+.raised {
+  @extend %button;
+  
+}
+
+.flat {
+  @extend %button;
+}
+
+.floating {
+  @extend %button;
+}
+
+.toggle {
+  @extend %button;  
+}
